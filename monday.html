@@ -1,0 +1,39 @@
+<html>
+<head><link rel="stylesheet" type="text/css" href="timestyle.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    var date = new Date();
+    var currentHour = date.getHours();
+    var currentMinute = date.getMinutes();
+
+    if(currentHour >= 0 && currentMinute < 7){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Integrated Web Development");
+        });
+    }
+
+    else{
+            $("#infoBar").each(function(){
+                $("#infoBar h1").text("No class at the moment");
+            });
+    }
+});
+    
+    
+
+    
+</script>
+
+</head>
+
+<div id="container">
+<div id="infoBar">
+    <h1></h1>
+</div>
+
+
+
+</div>
+</html>
