@@ -29,6 +29,7 @@
 #timetable{
     font-size: 15px;
     font-weight: bold;
+    float: left;
 }
 
 #timetable tr td.time{
