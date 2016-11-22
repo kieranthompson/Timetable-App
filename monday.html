@@ -1,40 +1,16 @@
 <html>
 <head><link rel="stylesheet" type="text/css" href="timestyle.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-<script>
-$(document).ready(function(){
-    var date = new Date();
-    var currentHour = date.getHours();
-    var currentMinute = date.getMinutes();
-
-    setTimeout(function(){
-    window.location.reload(1);
-    }, 10000);
-
-    if(currentHour >= 0 && currentMinute < 7){
-        $("#infoBar").each(function(){
-            $("#infoBar h1").text("Integrated Web Development");
-        });
-    }
-
-    else{
-            $("#infoBar").each(function(){
-                $("#infoBar h1").text("No class at the moment");
-            });
-    }
-});
-    
-    
-
-    
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="mondayclass.js"></script>
 
 </head>
 
 <div id="container">
 <div id="infoBar">
     <h1></h1>
+    <h2></h2>
 
 </div>
 
@@ -42,15 +18,12 @@ $(document).ready(function(){
 <table id ="timetable">
     <table id="timetable">
         <tr>
-            <th>time</th>
-            <th>class</th>
-        </tr>
-        <tr>
             <td class="time">9.30</td>
             <td>Object Oriented System Analysis and Design</td>
         </tr>
         <tr>
             <td class="time">10.30</td>
+            <td>Object Oriented System Analysis and Design<br>
         </tr>
         <tr>
             <td class="time">11.30</td>
