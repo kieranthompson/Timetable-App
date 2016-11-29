@@ -36,7 +36,7 @@ $(document).ready(function(){
     else if(currentHour == 19 && currentMinute > 21 ){
         $("#infoBar").each(function(){
             $("#infoBar h1").text("object oriented system analysis and design");
-            $("#infoBar h2").text("Thank fuck it worked!");
+            $("#infoBar h2").text("Room: 2209");
         });
     }
 
