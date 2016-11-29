@@ -7,24 +7,19 @@ $(document).ready(function(){
 
     switch(day){
         case 1:
-            day = "Monday";
             monday();
         break;
         case 2:
-            day = "Tuesday";
-            // $('#infoBar').each(function(){
-            //     $('#infoBar h1').text("Sorry, didn't work");
-            // });
-            monday();
+            tuesday();
         break;
         case 3:
-            day = "Wednesday";
+            wednesday();
         break;
         case 4:
-            day = "Thursday";
+            thursday();
         break;
         case 5:
-            day = "Friday";
+            friday();
         break;
         case 6:
             day = "Saturday";
@@ -38,23 +33,89 @@ $(document).ready(function(){
 
     function monday(){ 
 
+    if(currentHour == 9 && currentMinute >=30 || currentHour == 10 && currentMinute < 30){
+        $("#infoBar").ready(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    if(currentHour == 10 && currentMinute >=30 || currentHour == 11 && currentMinute < 30){
+        $("#infoBar").ready(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
     if(currentHour == 11 && currentMinute >=30 || currentHour == 12 && currentMinute < 30){
         $("#infoBar").ready(function(){
-            $("#infoBar h1").text("OBJECT ORIENTED SYSTEM ANALYSIS AND DESIGN");
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
             $("#infoBar h2").text("Room: 2290");
         });
     }
 
     else if(currentHour == 12 && currentMinute >= 30 || currentHour == 13 && currentMinute < 30){
         $("#infoBar").each(function(){
-            $("#infoBar h1").text("object oriented system analysis and design");
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
             $("#infoBar h2").text("Room: 2290");
         });
     }
 
     else if(currentHour == 13 && currentMinute >= 30 || currentHour == 14 && currentMinute < 30){
         $("#infoBar").each(function(){
-            $("#infoBar h1").text("object oriented system analysis and design");
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+            
+        });
+    }
+
+    else if(currentHour == 14 && currrentMinute >=30 || currentHour == 15 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text(" ");
+        })
+
+    }
+
+    else{
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("No class at the moment");
+        });
+    }
+}
+
+function tuesday(){
+
+    if(currentHour == 9 && currentMinute >=30 || currentHour == 10 && currentMinute < 30){
+        $("#infoBar").ready(function(){
+            $("#infoBar h1").text("No Class");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 10 && currentMinute >= 30 || currentHour == 11 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    if(currentHour == 11 && currentMinute >=30 || currentHour == 12 && currentMinute < 30){
+        $("#infoBar").ready(function(){
+            $("#infoBar h1").text("Integrated Web Development");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    if(currentHour == 12 && currentMinute >=30 || currentHour == 13 && currentMinute < 30){
+        $("#infoBar").ready(function(){
+            $("#infoBar h1").text("Integrated Web Development");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 13 && currentMinute >= 30 || currentHour == 14 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("No Class");
             $("#infoBar h2").text("Room: 2290");
         });
     }
@@ -68,7 +129,140 @@ $(document).ready(function(){
 
     else if(currentHour == 19 && currentMinute > 21 ){
         $("#infoBar").each(function(){
-            $("#infoBar h1").text("object oriented system analysis and design");
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2209");
+        });
+    }
+
+    else{
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("No class at the moment");
+        });
+    }
+
+}
+
+function wednesday(){
+    if(currentHour == 11 && currentMinute >=30 || currentHour == 12 && currentMinute < 30){
+        $("#infoBar").ready(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 12 && currentMinute >= 30 || currentHour == 13 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 13 && currentMinute >= 30 || currentHour == 14 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 14 && currrentMinute >=30 || currentHour == 15 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text(" ");
+        })
+
+    }
+
+    else if(currentHour == 19 && currentMinute > 21 ){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2209");
+        });
+    }
+
+    else{
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("No class at the moment");
+        });
+    }
+
+}
+
+function thursday(){
+    if(currentHour == 11 && currentMinute >=30 || currentHour == 12 && currentMinute < 30){
+        $("#infoBar").ready(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 12 && currentMinute >= 30 || currentHour == 13 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 13 && currentMinute >= 30 || currentHour == 14 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 14 && currrentMinute >=30 || currentHour == 15 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text(" ");
+        })
+
+    }
+
+    else if(currentHour == 19 && currentMinute > 21 ){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2209");
+        });
+    }
+
+    else{
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("No class at the moment");
+        });
+    }
+
+}
+
+
+function friday(){
+    if(currentHour == 11 && currentMinute >=30 || currentHour == 12 && currentMinute < 30){
+        $("#infoBar").ready(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 12 && currentMinute >= 30 || currentHour == 13 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 13 && currentMinute >= 30 || currentHour == 14 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
+            $("#infoBar h2").text("Room: 2290");
+        });
+    }
+
+    else if(currentHour == 14 && currrentMinute >=30 || currentHour == 15 && currentMinute < 30){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text(" ");
+        })
+
+    }
+
+    else if(currentHour == 19 && currentMinute > 21 ){
+        $("#infoBar").each(function(){
+            $("#infoBar h1").text("Object Oriented System Analysis and Design");
             $("#infoBar h2").text("Room: 2209");
         });
     }
@@ -79,11 +273,4 @@ $(document).ready(function(){
         });
     }
 }
-
-// else{
-//     $('#infoBar').each(function(){
-//         $('#infoBar h1').text("DIDNT WORK")
-//     });
-//}
-
 });
