@@ -8,24 +8,31 @@ $(document).ready(function(){
     switch(day){
         case 1:
             monday();
+            $("#infoBar #currentDay").text("Today is Monday, the " + date.getDate() + " of the " + date.getMonth());
         break;
         case 2:
             tuesday();
+            $("#infoBar #currentDay").text("Today is Tuesday, the " + date.getDate() + " of the " + date.getMonth());
         break;
         case 3:
             wednesday();
+            $("#infoBar #currentDay").text("Today is Wednesday, the " + date.getDate() + " of the " + date.getMonth());
         break;
         case 4:
             thursday();
+            $("#infoBar #currentDay").text("Today is Thursday, the " + date.getDate() + " of the " + date.getMonth());
         break;
         case 5:
             friday();
+            $("#infoBar #currentDay").text("Today is Friday, the " + date.getDate() + " of the " + date.getMonth());
         break;
         case 6:
             day = "Saturday";
+            $("#infoBar #currentDay").text("Today is Saturday, the " + date.getDate() + " of the " + date.getMonth());
         break;
         case 7:
             day = "Sunday";
+            $("#infoBar #currentDay").text("Today is Sunday, the " + date.getDate() + " of the " + date.getMonth());
         break;
         default:
             day = day;
@@ -153,6 +160,10 @@ function wednesday(){
     }
 
     else if(currentHour == 15 && currentMinute >= 30 || currentHour == 16 && currentMinute < 30){
+        $("#infoBar h1").text("Integrated Web Development");
+    }
+
+    else if(currentHour == 16 && currentMinute >= 30 || currentHour == 17 && currentMinute < 30){
         $("#infoBar h1").text("Integrated Web Development");
     }
 
