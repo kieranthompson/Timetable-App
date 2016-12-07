@@ -1,3 +1,4 @@
+@media screen and (max-width: 412px){ 
 #container{
     height: 100%;
     width: 100%;
@@ -8,7 +9,7 @@
 
 #infoBar{
     float: left;
-    height: 20%;
+    height: 15%;
     width: 98%;
     margin: 1%;
     background-color: #f8f8f8; 
@@ -16,24 +17,25 @@
 }
 
 #infoBar #currentClass{
-	font-size: 40px;
+	font-size: 20px;
 }
 
 #infoBar #currentDay{
-	font-size: 25px;
+	font-size: 15px;
 }
 
 #infoBar h1{
-    font-size: 50px;
+    font-size: 20px;
     font-weight: normal;
 }
 
 #infobar h2{
-    font-size: 20px;
+    font-size: 10px;
 
 }
 
 #timetableBar{
+    visibility: visible;
     padding: 1%;
     float: left;
     height: 75%;
@@ -41,15 +43,15 @@
     background-color: #e1e4ea;
 }
 
-#timetable{
-    font-size: 35px;
+.timetable{
+    font-size: 20px;
     background-color: #e8e8e8;
     height: 99%;
     width: 100%;
     font-weight: bold;
 }
 
-#timetable tr td{
+.timetable tr td{
     background-color: white;
     padding: 2.5%;
     width: 50%;
@@ -57,9 +59,65 @@
     border-style: 5px;
 }
 
-#timetable tr td.time{
+.timetable tr td.time{
     width: 10%;
     background-color: white;
     font-weight: normal;
 }
 
+.btnDay{
+    font-size: 14px;
+    height: 5%;
+    width: 18.5%;
+    border:none;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.mon{
+    margin-left: 1%;
+}
+
+}
+
+#fullscreenTable{
+    visibility: hidden;
+}
+
+@media screen and (min-width: 413px){
+
+body{
+    background-color: #e8e8e8;
+}
+
+#timetableBar{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+#fullscreenTable{
+    visibility: visible;
+}
+
+#fullscreenTable td{
+    background-color: white;
+    padding: 1%;
+    width: 15%;
+}
+
+#fullscreenTable td.time{
+    max-width: 10%;
+}
+
+#fullscreenTable #blank{
+    background-color: #e8e8e8;
+}
+
+.btnDay{
+    visibility: hidden;
+}
+}
